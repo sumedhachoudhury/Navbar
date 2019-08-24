@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+    <body>
+        <nav>
+<ul>
+    <button>X</button>
+    <li>
+        <a href="#About me">About me</a>
+    </li>
+    <li>
+        <a href="#Projects">Projects</a>
+    </li>
+    <li>
+        <a href="#CV">CV</a>
+    </li>
+    <li>
+        <a href="#Contacts">Contacts</a>
+    </li>
+</ul>
+</nav>
+
+    <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        /* function called when you click of the button */
+        $("button").click(function(){
+            
+            /* this if else to change the text in the button */
+            if($("button").text() == "☰"){
+             $("button").text("🞬");
+            }else{
+              $("button").text("☰");
+            }
+          
+          /* this function toggle the visibility of our "li" elements */
+          $("li").toggle("slow");
+        });
+      });
+    </script>
+
+
+</body>
+    
+</html>
+

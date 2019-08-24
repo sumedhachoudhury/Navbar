@@ -1,0 +1,66 @@
+button {
+    display: none;
+  }
+
+li {
+    list-style-type: none;
+    margin: 0 2vh;
+    font-size: 3vh;
+}
+
+a {
+    text-decoration: none;
+    padding: 2vw;
+    color: black;
+    font-family: monospace;
+}
+
+a:hover {
+    background-color: #C6E9FF;
+  }
+
+nav {
+    width: 100vw;
+    background-color: #D6EFFF;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  body{
+    margin: 0;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    
+    button {
+        /*makes the button visible*/
+        display: block;
+        align-self: flex-start;
+        
+        padding: 2vw;
+        font-size: 3vh;
+        background-color: #AFE0FF;
+        border: none;
+        
+        outline: none;
+        cursor: pointer;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+    }
+    
+  }
